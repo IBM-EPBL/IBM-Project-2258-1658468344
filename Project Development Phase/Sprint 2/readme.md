@@ -6,10 +6,10 @@ SPRINT-2 : Smart Lender - Applicant Credibility Prediction for Loan Approval
 FOCUS ELEMENTS:
 
 1.Preprocessing:
-  Feature Elimination
-  Handling Missing values
-  Encoding the categorical data
-  Train Test Split
+    Feature Elimination
+    Handling Missing values
+    Encoding the categorical data
+    Train Test Split
 2.ML Model Building
 3.Comparing ML Model
 4.Selecting Best Model
