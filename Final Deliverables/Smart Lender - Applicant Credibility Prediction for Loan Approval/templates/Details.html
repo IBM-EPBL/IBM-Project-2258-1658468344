@@ -1,0 +1,168 @@
+<html>
+<style type="text/css">
+
+body{
+	background-color:white;
+}
+h2{
+  color: #4285F4;
+  font-weight: bold;
+  padding: 5px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+
+}
+h1{
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+
+}
+
+label {
+  color:#0d6efd
+  width: 25%;
+  padding:60px;
+  margin:10px 0; 
+  border-radius:10px;
+  font-weight:bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+select {
+  color:rgba(28,154,97,1);
+  font-size: 15px;
+  width: 20%;
+  padding:10px;
+  border-radius:10px;
+  font-weight: bold;
+}
+
+input[type=text] {
+  color:rgba(28,154,97,1);
+  font-size: 15px;
+  width: 20%;
+  padding:10px;
+  #height:30px;
+  font-weight: bold;
+  margin:10px 0; // add top and bottom margin
+}
+input[type=submit] {
+  font-size: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 70%;
+  padding:10px;
+  font-weight: bold;
+  border-radius:10px;
+  background-color:#0d6efd;
+  height:60px;
+  margin:10px 0; // add top and bottom margin
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input[type=text] {
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=submit] span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+input[type=submit] span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover span {
+  padding-right: 25px;
+  background-color:red;
+}
+.he{
+border: 1px outset black;
+background-color:#4285F4;
+  text-align: center;
+}
+
+.main{
+ border: 1px outset black;
+}
+</style>
+<body>
+<form method="post">
+  <div class = "he"><h1>LOAN ELIGIBILITY PREDICTION SYSTEM</h1></div>
+  <div class = "main">
+  <h2>Fill up the Following details</h2>
+  <label for="fname">Gender            </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+  <select name="gender" id="gender">
+  <option value="-1">Select your Option</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="fname">Marital Status            </label>
+  <select name="marriage" id="marriage">
+  <option value=-1">Select your Option</option>
+  <option value="yes">Married</option>
+  <option value="no">Not Married</option>
+  </select><br><br>
+  <label for="fname">Dependents      </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <select name="dependents" id="dependents">
+  <option value="-1">Select your Option</option>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3+</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="fname">Education </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <select name="Education" id="Education">
+  <option value ="-1">Select your Option</option>
+  <option value="Graduate">Graduate</option>
+  <option value="not graduate">Not Graduate</option>
+  </select><br><br>
+  <label for="fname">Self Employed     </label>
+  <select name="selfemployed" id="selfemployed">
+  <option value="-1">Select your Option</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="fname">Applicant Income </label>
+  <input type="text" id="applicantIncome" placeholder="Enter Income" name="applicantIncome"><br><br>
+  <label for="fname">Co Applicant Income </label>
+  <input type="text" id="coapplicantIncome" placeholder="Enter Income" name="coapplicantIncome">&nbsp;&nbsp;
+  <label for="fname">Loan Amount    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="loanamt" placeholder="Enter Loan Amount" name="loanamt"><br><br>
+  <label for="fname">Loan Amount Term ( in Days )</label>
+  <input type="text" loanamtterm" placeholder="Enter Loan Amount Term" name="loanamtterm"><br><br>
+  <label for="fname">Credit History</label>
+  <select name="credithistory" id="credithistory">
+  <option value="-1">Select your Option</option>
+  <option value="1">1</option>
+  <option value="0">0</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="fname">Property Area </label>
+  <select name="propertyArea" id="propertyArea">
+  <option value="-1">Select your Option</option>
+  <option value="Urban">Urban</option>
+  <option value="Rural">Rural</option>
+  <option value="Semi Urban">Semi Urban</option>
+  </select><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" formaction="showResult" id = "btn" value="showResult" >
+</form>
+</body>
+</html>

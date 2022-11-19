@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/Contact-Details.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}">
+</head>
+
+<body>
+    <section class="py-4 py-xl-5">
+        <div class="container h-100">
+            <div class="text-white bg-primary border rounded border-0 p-4 py-5">
+                <div class="row h-100">
+                    <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
+                        <div>
+                            <h1 class="text-uppercase fw-bold text-white mb-3" style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sorry!!!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You are not eligible for the Loan Try by reducing the quoted loan amount</h1>
+                            <p class="mb-4">The result showed here is always an approximate result. Each bank follows different Loan sanction procedures. It only shows an approximate prediction through the information gathered from a trusted source </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative py-4 py-xl-5">
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2>Give us your Feedback</h2>
+                    <p class="w-lg-50">Your feedback may help us to improve our model and correct our mistakes</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4" method="post">
+                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name"></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
+                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Enter your feedback"></textarea></div>
+                            <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-white bg-dark">
+            <div class="container py-4 py-lg-5">
+                <p class="mb-0" style="text-align: center;">Smart Lender © NaalaiyaThiranProject</p>
+            </div>
+        </footer>
+    </section>
+    <script src="{{ url_for('static',filename = 'js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>
