@@ -1,4 +1,4 @@
-**SPRINT-1 : Smart Lender - Applicant Credibility Prediction for Loan Approval**
+**SPRINT-3 : Smart Lender - Applicant Credibility Prediction for Loan Approval**
 
       Code Upload in github completed
       User Acceptance Testing Document for sprint-1: Completed
