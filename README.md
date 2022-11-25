@@ -1,0 +1,3 @@
+# IBM-Project-2258-1658468344
+Smart Lender - Applicant Credibility Prediction for Loan Approval
+    The process of bank credit risk evaluation is recognized at banks across the globe.  As we know credit risk evaluation is very crucial, there is a variety of techniques are used for risk evaluation.  The prediction of credit defaulters is one of the difficult tasks for many banks.  But by forecasting the loan defaulters, the banks definitely may reduce their loss by reducing their non-profit assets.  Through this prediction the bank assets will be in safe hands.  This prediction system reduces the risk factor behind selecting the safe person so as to save lots of bank efforts and assets.
